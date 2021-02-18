@@ -76,8 +76,6 @@ header .container {
 .nav,
 .contacts-list {
   align-items: center;
-  margin-top: 32px;
-  margin-bottom: 32px;
 }
 
 .logo {
@@ -103,6 +101,7 @@ header .container {
 }
 
 .nav-list-link {
+  display: inline-block;
   padding: 20px 0;
   font-weight: 500;
   font-size: 14px;
@@ -153,10 +152,16 @@ header .container {
   color: var(--accent-color);
 }
 
+.slogan {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
 .slogan-title {
-  align-items: center;
   display: flex;
   text-align: center;
+  margin: 0 auto 30px;
   padding: 0 auto;
   width: 696px;
   font-weight: 900;
@@ -166,14 +171,21 @@ header .container {
 }
 
 .slogan-link {
+  margin: 0 auto;
+}
+
+.btn {
   display: flex;
-  padding: 0 auto;
+  align-items: center;
+  justify-content: center;
   width: 200px;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   color: #fff;
   background-color: var(--accent-color);
+  border-radius: 4px;
 }
 
 .features-item-title {
