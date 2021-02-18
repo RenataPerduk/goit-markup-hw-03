@@ -106,8 +106,7 @@ header .container {
   text-decoration: none;
 }
 
-.nav-list li:not(:first-child),
-.contacts-list li:not(:first-child) {
+.nav-list li:not(:first-child) {
   margin-left: 50px;
 }
 
