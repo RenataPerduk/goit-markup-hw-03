@@ -17,6 +17,7 @@ html {
   --slogan-footer-color: #2f303a;
   --additional-background-color: #f5f4fa;
   --main-background-color: #fff;
+  --border-color: rgba(236, 236, 236, 1);
 }
 
 ul {
@@ -36,6 +37,7 @@ a {
 
 .header {
   background-color: var(--main-background-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .slogan,
@@ -102,7 +104,7 @@ header .container {
 
 .nav-list-link {
   display: inline-block;
-  padding: 20px 0;
+  padding: 32px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -153,9 +155,9 @@ header .container {
 }
 
 .slogan {
-    text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .slogan-title {
@@ -188,7 +190,24 @@ header .container {
   border-radius: 4px;
 }
 
+ul {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.features-list li:not(:first-child) {
+  margin-left: 30px;
+}
+
 .features-item-title {
+  width: 270px;
+  margin: 0 auto 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -197,29 +216,72 @@ header .container {
 }
 
 .features-item-text {
+  width: 270px;
+  padding: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--title-text-color);
 }
 
+.galery .container {
+  padding-bottom: 94px;
+}
+
+.galery-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.galery-list li:not(:first-child) {
+  margin-left: 30px;
+}
+
 .galery-title {
+  width: 376px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   color: var(--title-text-color);
+  text-align: center;
+  margin: 0 auto 50px;
+}
+
+ul.galery-list {
+  padding: 0;
+  margin: 0;
+}
+
+.team-list {
+  display: flex;
+  width: calc(100% - 60px / 4);
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul.team-list {
+  padding: 0;
+  margin: 0;
   text-align: center;
 }
 
 .team-title {
+  margin: 0 auto 50px;
+  padding-top: 94px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   color: var(--title-text-color);
   text-align: center;
 }
+.team-item-image {
+  display: block;
+  margin-bottom: 30px;
+}
 
 .team-item-title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.87;
@@ -227,13 +289,20 @@ header .container {
 }
 
 .team-item-text {
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-text-color);
 }
 
+ul.team-list {
+  margin-bottom: 94px;
+}
+
 .footer-address-map {
+  display: flex;
+  padding-bottom: 9px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -247,11 +316,20 @@ header .container {
 
 .footer-email,
 .footer-tel {
+  display: flex;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--mailtel-logo-color);
+}
+
+.footer-email {
+  padding-bottom: 9px;
+}
+
+.footer-tel {
+  padding-bottom: 60px;
 }
 
 .footer-email:hover {
@@ -263,6 +341,9 @@ header .container {
 }
 
 .footer-logo {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 20px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -275,13 +356,32 @@ header .container {
   color: var(--accent-color);
 }
 
+.portfolio-button-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 22px;
+  height: 26px;
+  width: 611px;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 34px;
+  margin: 0 auto;
+}
+
+.portfolio-button-list li:not(:first-child) {
+  margin-left: 8px;
+}
 .portfolio-button {
+  display: flex;
+  text-align: center;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   color: var(--title-text-color);
   background-color: var(--additional-background-color);
+  border-radius: 4px;
 }
 
 .portfolio-button:hover {
@@ -292,6 +392,18 @@ header .container {
 .portfolio-button:focus {
   color: #fff;
   background-color: var(--additional-background-color);
+}
+
+.portfolio-list {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+ul.portfolio-list {
+  margin: 0;
+  width: 1200px;
+  padding: 0;
+  justify-content: space-evenly;
 }
 
 .portfolio-item-header {
