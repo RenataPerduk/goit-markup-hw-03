@@ -90,17 +90,11 @@ header .container {
   width: 145px;
 }
 
-.logo:hover {
-  color: var(--accent-color);
-}
 
 .logo-web {
   color: var(--accent-color);
 }
 
-.logo-web:hover {
-  color: var(--accent-color);
-}
 
 .nav-list-link {
   display: inline-block;
@@ -195,11 +189,15 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: 0;
 }
 
 .features-list li:not(:first-child) {
   margin-left: 30px;
 }
+
 
 .features-item-title {
   width: 270px;
@@ -348,9 +346,6 @@ ul.team-list {
   text-decoration: none;
 }
 
-.footer-logo:hover {
-  color: var(--accent-color);
-}
 
 .portfolio-button-list {
   display: flex;
@@ -369,16 +364,20 @@ ul.team-list {
   margin-left: 8px;
 }
 .portfolio-button {
-  display: flex;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
   text-align: center;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  text-decoration: none;
+  min-width:145px;
   color: var(--title-text-color);
   background-color: var(--additional-background-color);
-  border-radius: 4px;
 }
+
 
 .portfolio-button:hover {
   color: #fff;
