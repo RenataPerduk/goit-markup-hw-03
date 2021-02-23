@@ -393,19 +393,18 @@ ul.team-list {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
-}
-
-.card-thumb {
-  display: block;
-  box-shadow: 1px rgba (238, 238, 238, 1);
-  width: 370px;
-  height: 404px;
+  padding-bottom: 94px;
 }
 
 .portfolio-list > .portfolio-list-item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.portfolio-list > .portfolio-list-item:hover {
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+    1px 4px 6px rgb(0 0 0 / 16%);
 }
 
 .portfolio-item-image {
